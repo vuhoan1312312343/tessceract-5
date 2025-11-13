@@ -347,6 +347,7 @@ Dự án được phát triển bởi:
 © 2025 [Nhóm 5], [CNTT 16-02], TRƯỜNG ĐẠI HỌC ĐẠI NAM
 
 ---
+## 🏗️ KIẾN TRÚC HỆ THỐNG
 
 
 
