@@ -2,8 +2,8 @@
 
 <div align="center">
 <p align="center">
-  <img src="images/logoDaiNam.png" alt="DaiNam University Logo" width="200"/>
-  <img src="images/LogoAIoTLab.png" alt="AIoTLab Logo" width="170"/>
+  <img src="img/logoDaiNam.png" alt="DaiNam University Logo" width="200"/>
+  <img src="img/LogoAIoTLab.png" alt="AIoTLab Logo" width="170"/>
 </p>
 
 [![Made by AIoTLab](https://img.shields.io/badge/Made%20by%20AIoTLab-blue?style=for-the-badge)](https://www.facebook.com/DNUAIoTLab)
@@ -301,6 +301,33 @@ Truy cập: **http://localhost:5000**
 
 ---
 
+## 🐛 Xử lý lỗi thường gặp
+
+### Lỗi: `TesseractNotFoundError`
+```bash
+# Kiểm tra Tesseract đã cài chưa
+tesseract --version
+
+# Nếu chưa có, cài đặt lại và cấu hình path trong app.py
+```
+
+### Lỗi: `MongoDB connection failed`
+```bash
+# Kiểm tra MongoDB đang chạy
+sudo systemctl status mongodb  # Linux
+# Hoặc mở MongoDB Compass (Windows)
+
+# Khởi động MongoDB
+sudo systemctl start mongodb
+```
+
+### Lỗi: `ModuleNotFoundError: No module named 'fuzzywuzzy'`
+```bash
+# Cài đặt lại thư viện
+pip install fuzzywuzzy python-Levenshtein
+```
+
+---
 
 ## 🤝 Đóng góp
 
@@ -310,21 +337,15 @@ Dự án được phát triển bởi:
 |-----------|---------|
 | **[Nguyễn Ngọc Bảo Long]** | Phát triển toàn bộ hệ thống OCR, thiết kế kiến trúc, implement Fuzzy Matching, training & testing, biên soạn tài liệu |
 | **[Vũ Khánh Hoàn]** | Phát triển toàn bộ hệ thống OCR, thiết kế kiến trúc, implement Fuzzy Matching, training & testing, biên soạn tài liệu |
-**Giảng viên hướng dẫn:** [Tên giảng viên]
+
+**Giảng viên hướng dẫn:** Nguyễn Thái Khánh , Lê Trung Hiếu
 
 ---
 
 ## 📄 License
 
-© 2025 [Tên nhóm], [Lớp], TRƯỜNG ĐẠI HỌC ĐẠI NAM
+© 2025 [Nhóm 5], [CNTT 16-02], TRƯỜNG ĐẠI HỌC ĐẠI NAM
+
 ---
-
-<div align="center">
-
-### ⭐ Nếu project hữu ích, hãy cho 1 star nhé! ⭐
-
-**Made with ❤️ by [Your Name]**
-
-</div>
 
 ## 🏗️ KIẾN TRÚC HỆ THỐNG
